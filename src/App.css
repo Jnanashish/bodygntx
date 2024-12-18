@@ -5,6 +5,10 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #FFF;
+  @media (min-width: 991px) {
+    max-width: 60%;
+    margin: 0px auto;
+  }
 }
 
 .App {
@@ -29,15 +33,28 @@ body {
   }
 }
 
+.container{
+  background-image: url("./image.jpeg");
+  img{
+    transform: scaleX(-1);
+
+  }
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Makes the image cover the entire area */
+  background-position: center; /* Centers the image */
+  border-radius: 12px 12px 0px 0px;
+}
 
 section {
   padding: 1.5rem 2rem;
-  margin: 1rem auto;
+  margin: 1rem auto 0;
   max-width: 800px;
   border-radius: 14px;
   text-align: left;
+  font-weight: 600;
+  font-size: 18px;
 
-  background-color: #000;
+  /* background-color: #000; */
   color: #FFF;
   @media (max-width: 991px) {
     width: 80%;
@@ -68,14 +85,17 @@ section {
   text-align: center;
   background-color: #000;
   color: #FFF;
-  padding: 12px;
-  margin-top: 24px;
-  h2 {
+  padding: 16px;
+  border-top: 2px solid #FFF;
+  /* margin-top: 24px; */
+  h2, h3 {
     color: #FFF;
+    margin: 10px auto;
+    font-size: 18px;
   }
 
   p {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 18px;
   }
 }

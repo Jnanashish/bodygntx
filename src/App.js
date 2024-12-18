@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import logo from "./logo.jpg";
+import image from "./image.jpeg";
 
 function App() {
   return (
@@ -11,12 +12,13 @@ function App() {
         <p>
           In Home Personal Training Service for Busy Lives | Customized, time-efficient
           fitness solutions for professionals who want results without the fuss. Let’s
-          make your goals happen! 💼💪
+          make your goals happen! 💼 💪
         </p>
       </header>
 
 
 
+      <div className="container">
       <section className="services">
         <h2>Services</h2>
         <ul>
@@ -44,10 +46,13 @@ function App() {
           <li>BMX</li>
         </ol>
       </section>
+      </div>
 
       <footer className="contact">
-        <h2>Contact</h2>
-        <p><a href="tel:+918295031333"></a>☎️ +91 82950 31333</p>
+        <h3>Book your trial session today</h3>
+        <h2 style={{marginBottom : "0px"}}>Raman Kumar</h2>
+        <h4 style={{marginTop : "0px"}}>( Certified and Experienced Coach )</h4>
+        <p>Call or WhatsApp <a href="tel:+918295031333"></a>☎️ +91 82950 31333</p>
       </footer>
     </div>
   );
