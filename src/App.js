@@ -48,13 +48,16 @@ function App() {
                         <li>Kids Fitness</li>
                         <li>Special Population Training</li>
                         <li>BMX</li>
+                        <li>Group Fitness</li>
                     </ol>
                 </section>
-                <button onClick={openWa}>Hire me as personal trainer</button>
+                <button onClick={openWa}>
+                    <p>Book your trial session today</p> <img width="24" height="24" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1" />
+                </button>
             </div>
 
             <footer className="contact">
-                <h3>Book your trial session today</h3>
+                {/* <h3>Book your trial session today</h3> */}
                 <h2 style={{ marginBottom: "0px" }}>Raman Kumar</h2>
                 <h4 style={{ marginTop: "0px" }}>( Certified and Experienced Coach )</h4>
                 <p>
